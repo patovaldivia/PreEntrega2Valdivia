@@ -78,13 +78,16 @@ nav ul {
 @media (min-width:992px) {
     .imagen-dividida-padre {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items:;
         gap: 20px;
-        padding: 50px 0 50px 0;
+        padding: 20px 0 20px 0;
     }
 
-    
+    .imagen-dividida-padre img {
+        width: 50%;
+    }
 }
 
 /*GENERAL*/
@@ -192,6 +195,32 @@ h4 {
 
     .ubicacion h4 {
         text-align: center;
+    }
+}
+
+@media (min-width:992px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .redes-sociales-padre {
+        display: flex;
+        gap: 5px;
+        justify-content:flex-start;
+    }
+
+    .redes-sociales-padre div h4 {
+        text-align:left;
+    }
+
+    .ubicacion h4 {
+        text-align: left;
     }
 }
 /*NUESTROS TRABAJOS*/
