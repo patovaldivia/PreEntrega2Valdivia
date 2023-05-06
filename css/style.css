@@ -1,3 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.body {
+  background-color: #6B6D76;
+  font-family: monospace;
+  width: 100%;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul, ol {
+  font-size: 20px;
+}
+
+.ol-text {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+
+ol ul {
+  padding-left: 95px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.titulo-listado {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+h3 {
+  padding-left: 20px;
+  margin: 20px 0 20px 0;
+}
+
+header {
+  background-color: #6B6D76;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header img {
+  width: 400px;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-collapse ul {
+  gap: 50px;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul {
+  display: flex;
+  gap: 80px;
+  cursor: pointer;
+}
+
+.links-nav {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+}
+
+.nav-link {
+  background-color: #6B6D76;
+  transition: background-color 2s;
+}
+.nav-link:hover {
+  background-color: #A69888;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.footer .redes-sociales-padre {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.footer .redes-sociales-padre .redes-sociales-abuelo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: first baseline;
+}
+.footer .redes-sociales-padre .redes-sociales-abuelo .redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: stretch;
+}
+.footer .redes-sociales-padre .redes-sociales-abuelo .redes-sociales:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.footer .redes-sociales-padre .redes-sociales-abuelo .redes-sociales p {
+  font-size: 15px;
+}
+.footer .redes-sociales-padre .redes-sociales-abuelo .redes-sociales .iconify {
+  cursor: pointer;
+  font-size: 25px;
+  color: black;
+}
+.footer .ubicacion {
+  margin: 10px 0 10px 0;
+}
+.footer .ubicacion .mapa {
+  height: 200px;
+  width: 300px;
+}
+.footer .ubicacion .mapa:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+.copy {
+  font-size: 10px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .footer .redes-sociales-padre {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  .footer .redes-sociales-padre div h4 {
+    text-align: center;
+  }
+  .footer .ubicacion h4 {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .footer .redes-sociales-padre {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+  }
+  .footer .redes-sociales-padre div h4 {
+    text-align: center;
+  }
+  .footer .ubicacion h4 {
+    text-align: left;
+  }
+}
+.imagen-dividida-padre {
+  background-color: #A69888;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.imagen-dividida-padre img {
+  width: 100%;
+  height: 400px;
+}
+.imagen-dividida-padre .contenedor-textos {
+  padding: 50px;
+}
+.imagen-dividida-padre .contenedor-textos p {
+  font-size: 20px;
+  color: black;
+  height: 80%;
+}
+
+@media (min-width: 768px) {
+  .imagen-dividida-padre img {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .imagen-dividida-padre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0 20px 0;
+  }
+  .imagen-dividida-padre img {
+    width: 50%;
+    height: 700px;
+  }
+}
+.carousel {
+  background-color: #A69888;
+}
+
+.carousel-item img {
+  height: 500px;
+}
+.carousel-item img:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+.img2 img {
+  width: 350px;
+}
+
+.padre-card {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.padre-card .card-car {
+  background-color: #A69888;
+  margin: 20px;
+  padding: 30px;
+  width: 330px;
+  height: 470px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.padre-card .card-car img {
+  width: 300px;
+  height: 300px;
+}
+.padre-card .card-car .img-copyright {
+  font-size: 10px;
+}
+.padre-card .card-car .img-copyright a {
+  cursor: pointer;
+}
+.padre-card .card-car:hover {
+  transition: all 0.5s;
+  scale: 1.1;
+}
+
+.imagen-dividida-padre-acerca-de-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #A69888;
+  padding: 0 0 0 0;
+  flex-direction: column;
+}
+.imagen-dividida-padre-acerca-de-nosotros img {
+  width: 100%;
+  height: 500px;
+}
+.imagen-dividida-padre-acerca-de-nosotros .contenedor-textos {
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .imagen-dividida-padre-acerca-de-nosotros img {
+    height: 550px;
+  }
+}
+@media (min-width: 992px) {
+  .img-ptrb {
+    width: 100%;
+    height: 100%;
+  }
+  .imagen-dividida-padre-acerca-de-nosotros {
+    flex-direction: row-reverse;
+  }
+  .parrafo {
+    width: 500px;
+  }
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #A69888;
+  width: 350px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+.formulario .form {
+  padding: 5px;
+}
+.formulario .form .casilla {
+  width: 95%;
+  border-radius: 5px;
+}
+.formulario .form .boton {
+  gap: 5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .formulario {
+    width: 30%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

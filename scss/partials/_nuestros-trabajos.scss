@@ -1,0 +1,20 @@
+.carousel {
+    background-color: #A69888;
+}
+
+.carousel-item {
+    img {
+        height: 500px;
+        &:hover {
+            scale: (1.2);
+            transition: all .5s;
+        };
+    }
+}
+
+.img2 {
+    img {
+        width: 350px;
+    }
+}
+

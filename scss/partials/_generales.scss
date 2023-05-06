@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: #6B6D76;
+    font-family: monospace;
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul, ol {
+    font-size: 20px;
+}
+
+.ol-text {
+    list-style-type: decimal;
+    padding-left: 30px;
+}
+
+ol ul {
+    padding-left: 95px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.titulo-listado {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h3 {
+    padding-left: 20px;
+    margin: 20px 0 20px 0;
+}

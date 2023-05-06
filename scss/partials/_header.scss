@@ -1,0 +1,42 @@
+header {
+    background-color: #6B6D76;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    img {
+        width: 400px;
+    }
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        gap: 50px;
+    }
+}
+
+.logo {
+    width: 200px;
+}
+
+nav ul {
+    display: flex;
+    gap: 80px;
+    cursor: pointer;
+}
+
+.links-nav {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+.nav-link {
+    background-color: #6B6D76;
+    transition: background-color 2s;
+    &:hover {
+        background-color: #A69888;
+        border-radius: 10px;
+    }
+}

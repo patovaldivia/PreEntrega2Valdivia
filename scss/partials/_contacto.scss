@@ -1,0 +1,34 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A69888;
+    width: 350px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0px auto;
+    padding-top: 20px;
+    .form {
+        padding: 5px;
+        .casilla {
+            width: 95%;
+            border-radius: 5px;
+        };
+        .boton {
+            gap: 5px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .formulario {
+        width: 350px;
+    }
+}
+
+@media (min-width:992px) {
+    .formulario {
+        width: 30%;
+    }
+}
